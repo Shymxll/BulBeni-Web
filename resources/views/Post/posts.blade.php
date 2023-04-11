@@ -19,17 +19,21 @@
   <header>
     <div class="container-fluid my-3">
     @include("Post.navbar")
+    @include("Post.searchbar")
     </div>
   </header>
   <main>
 
-    <div class="row">
+    <div class="row-10">
 
     <div class=" container ">
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3  "  >
 
          @include("Post.readAllPosts")
+
+        </div>
+        <div class="row-2 bg-primary">
 
         </div>
     </div>
@@ -37,6 +41,7 @@
     </main>
   <footer>
     <!-- place footer here -->
+    @include("Post.pagination")
   </footer>
     </div>
   <!-- Bootstrap JavaScript Libraries -->
